@@ -1,11 +1,10 @@
 on:
   push:
     branches:
-      - githubaction/to-run-pytest
-
-  # pull_request:
-  #   branches:
-  #   - main
+      - main
+  pull_request:
+    branches:
+      - main
 
 name: Run test
 
