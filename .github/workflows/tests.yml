@@ -1,9 +1,12 @@
 name: Run test
 
 on:
-  pull_request:
-    branches:
-    - main
+  push:
+  branches:
+    - githubaction/to-run-pytest
+  # pull_request:
+  #   branches:
+  #   - main
 
 jobs:
   lint:
